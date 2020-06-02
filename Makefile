@@ -8,7 +8,7 @@ run:
 	mkdir -p ./logs && \
 	xhost + local:root
 	sudo docker run -it \
-    --network="host" \
+   	--network="host" \
 	--privileged \
 	--mount type=bind,src=/dev,dst=/dev,readonly \
 	--mount type=bind,src=`pwd`/logs,dst=/app/logs\
